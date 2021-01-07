@@ -1,0 +1,55 @@
+.term-header {
+    display: flex;
+    padding: 5px;
+
+}
+
+.term-header-button {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.term-header-button-close {
+    background: #ff615a;
+}
+
+.term-header-button-minimize {
+    background: #ffc230;
+}
+
+.term-header-button-expand {
+    background: #29cb41;
+}
+
+.term-header-title {
+    text-align: center;
+    color: #c2c2c2;
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 100%;
+    cursor: pointer;
+
+    -webkit-app-region: drag;
+}
+.term-header-title:hover{
+    cursor: pointer
+}
+/*css de inputs del tpv*/
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-number-input input:focus {
+    outline: none !important;
+}
+
+.custom-number-input button:focus {
+    outline: none !important;
+}

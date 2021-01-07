@@ -1,0 +1,8 @@
+{
+    "tailwindCSS.includeLanguages": {
+        "palintext": "html"
+    },
+    "tailwindCSS.colorDecorators": "on",
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.experimental.showPixelValues": true
+}

@@ -1,0 +1,21 @@
+{
+  "name": "timer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "electron-start": "nodemon --watch ./ --exec electron . ",
+    "test": "electron main.js",
+    "electron-build": "electron-packager ./ TIMER --win --out ./dist --arch=x64 --app-version=0.0.1 --overwrite"
+  },
+  "keywords": [],
+  "author": "Joeldev",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^11.1.0",
+    "electron-packager": "^15.2.0",
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="../dist/css/extras.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body class="transition duration-500 ease-in-out dark:bg-tertiary-black dark:text-white">
+    <div class="term-header dark:bg-primary-black sticky top-0">
+        <div class="term-header-title">
+            <span>APP EN DESAROLLO</span>
+        </div>
+        <button class="term-header-button term-header-button-minimize" id="min-btn"></button>
+        <button class="term-header-button term-header-button-expand " id="max-btn"></button>
+        <button class="term-header-button term-header-button-close" id="close-btn"></button>
+    </div>
+    <nav class="navbar dark:bg-tertiary-black">
+        <ul class="navbar-nav">
+            <li class="logo" style="-webkit-app-region: drag">
+                <a class="nav-link">
+                    <span class="logo-text">joeldev</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="747" height="326" viewBox="0 0 747 326">
+                        <g id="Mesa_de_trabajo_1" data-name="Mesa de trabajo 1">
+                            <circle id="yellow" class="cls-1" cx="375" cy="152" r="100" />
+                            <circle id="verde" class="cls-2" cx="639" cy="152" r="100" />
+                            <circle id="red" class="cls-3" cx="111" cy="152" r="100" />
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item" id="home">
+                <a href="./dashboard.html" class="nav-link">
+                    <svg viewBox="0 0 16 16" class="bi bi-grid-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd"
+                            d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
+                    </svg>
+                    <span class="link-text">Escritorio</span>
+                </a>
+            </li>
+            <li class="nav-item" id="media">
+                <a href="./tpv.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-basket"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                    <span class="link-text">TPV</span>
+                </a>
+            </li>
+            <li class="nav-item" id="pages">
+                <a href="./informe.html" class="nav-link">
+                    <svg viewBox="0 0 16 16" class="bi bi-files" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd"
+                            d="M4 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4z" />
+                        <path
+                            d="M6 0h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1H4a2 2 0 0 1 2-2z" />
+                    </svg>
+                    <span class="link-text">Informes</span>
+                </a>
+            </li>
+            <li class="nav-item" id="setting">
+                <a class="nav-link">
+                    <svg viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fillRule="evenodd"
+                            d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z" />
+                        <path fillRule="evenodd"
+                            d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z" />
+                    </svg>
+                    <span class="link-text">Configurar</span>
+                </a>
+            </li>
+
+            <li class="nav-item" id="themeButton">
+                <div class="nav-link" onclick="toggleTheme()">
+                    <i class="fas fa-sliders-h"></i>
+                    <span class="link-text">Themify</span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main class="cointainer">
+        <div class="content">
+            <div class="w-full px-4">
+                <div
+                    class="bg-white pt-5 pb-3 rounded shadow-md dark:bg-primary-black grid md:grid-cols-7 sm:grid-cols-4">
+                    <div class="px-3 mb-3 col-span-2">
+                        <div
+                            class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                            <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                <p>
+                                    <label for="Client"
+                                        class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">NOMBRE
+                                        DEL Cliente</label>
+                                </p>
+                            </div>
+                            <p>
+                                <input type="text"
+                                    class="block w-full px-1 py-1 text-gray-900 outline-none dark:bg-tertiary-black dark:text-gray-300"
+                                    name="Client" id="Client" disabled value="ANONIMO" />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-3 mb-3">
+                        <button
+                            class="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-4 inline-flex items-center">
+                            <span class="mr-2">Buscar</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentcolor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- component -->
+            <div class="w-full p-4">
+                <div class="bg-white p-4 rounded shadow-md dark:bg-primary-black">
+                    <h3 class="font-semibold text-gray-100 text-lg">Cesta</h3>
+                    <div class="overflow-auto" id="cesta" style="height:35rem">
+                    </div>
+                    <div class="grid grid-cols-7 pt-4">
+                        <div class="px-3 mb-3">
+
+                            <div
+                                class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                                <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                    <p>
+                                        <label for="Descound"
+                                            class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">Descuento</label>
+                                    </p>
+                                </div>
+                                <p>
+                                    <input type="number"
+                                        class="text-right block w-full px-1 py-1 text-gray-900 outline-none dark:bg-tertiary-black dark:text-white"
+                                        name="Descound" id="Descound" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-3">
+
+                            <div
+                                class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500 ">
+                                <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                    <p>
+                                        <label for="IVA"
+                                            class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">IVA</label>
+                                    </p>
+                                </div>
+                                <p>
+                                    <input type="number"
+                                        class="text-right block w-full px-1 py-1 text-gray-900 outline-none dark:bg-tertiary-black dark:text-white"
+                                        name="IVA" id="IVA" disabled />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-3">
+
+                            <div
+                                class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                                <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                    <p>
+                                        <label for="total"
+                                            class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">Total</label>
+                                    </p>
+                                </div>
+                                <p>
+                                    <input type="number"
+                                        class="text-right block w-full px-1 py-1 text-gray-900 outline-none dark:bg-tertiary-black dark:text-white"
+                                        name="total" id="total" disabled />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <div
+                    class="bg-white  pt-5 pb-2 rounded shadow-md dark:bg-primary-black grid md:grid-cols-7 sm:grid-cols-4 m-auto">
+                    <form id="formCode" class="px-3 mb-3">
+                        <div
+                            class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                            <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                <p>
+                                    <label for="code"
+                                        class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">CÓDIGO</label>
+                                </p>
+                            </div>
+                            <p>
+                                <input type="text"
+                                    class="block w-full px-1 py-1 text-gray-900 outline-none dark:bg-tertiary-black dark:text-white"
+                                    name="code" id="code" placeholder='DXAXXX' />
+                            </p>
+                        </div>
+                    </form>
+                    <form id="addProduct" class="col-span-6 grid grid-cols-7">
+                        <div class="px-3 mb-3 col-span-3">
+                            <div
+                                class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                                <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                    <p>
+                                        <label for="nameProduct"
+                                            class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">NOMBRE
+                                            DEL PRODUCTO</label>
+                                    </p>
+                                </div>
+                                <p>
+                                    <input type="text"
+                                        class="block w-full px-1 py-1 text-gray-900 outline-none dark:bg-tertiary-black dark:text-white"
+                                        name="nameProduct" id="nameProduct" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-3">
+                            <div
+                                class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                                <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                    <p>
+                                        <label for="countProduct"
+                                            class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">CANTIDAD</label>
+                                    </p>
+                                </div>
+                                <p>
+                                    <input type="number"
+                                        class="block w-full px-1 py-1 text-gray-900 outline-none dark:bg-tertiary-black dark:text-white"
+                                        name="countProduct" id="countProduct" placeholder='0' />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-3">
+                            <div
+                                class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                                <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                    <p>
+                                        <label for="priceProduct"
+                                            class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">PRECIO</label>
+                                    </p>
+                                </div>
+                                <p>
+                                    <input type="number"
+                                        class="block w-full px-1 py-1 text-gray-900 text-right outline-none dark:bg-tertiary-black dark:text-white"
+                                        name="priceProduct" step="0.01" id="priceProduct" placeholder='0.00' />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-3 hidden">
+                            <div
+                                class="p-1 border-gray-500 transition-all duration-500 border rounded focus-within:border-blue-500 focus-within:text-blue-500">
+                                <div class="px-1 -mt-4 text-xs tracking-wider uppercase">
+                                    <p>
+                                        <label for="categoryProduct"
+                                            class="px-1 text-gray-600 bg-white dark:bg-primary-black dark:text-white">Category</label>
+                                    </p>
+                                </div>
+                                <p>
+                                    <input type="text"
+                                        class="block w-full px-1 py-1 text-gray-900  outline-none dark:bg-tertiary-black dark:text-white"
+                                        name="categoryProduct" id="categoryProduct" value="other" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-3 mb-3">
+                            <button
+                                class="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2 px-4 inline-flex items-center">
+                                <span class="mr-2">Añadir</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentcolor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div
+                        class="flex items-center p-4 m-1 text-black bg-blue-300 rounded-lg shadow-xs cursor-pointer hover:bg-blue-500 hover:text-gray-100">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 fill-current hover:text-gray-100"
+                            viewBox="0 0 16 16">
+                            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                            <path
+                                d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z" />
+                        </svg>
+                        <div>
+                            <p class="ml-2 text-sm font-medium font-semibold">PAGO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../dist/js/main.js"></script>
+    <script src="../dist/js/tpv.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
