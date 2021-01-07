@@ -1,5 +1,12 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, autoUpdater, dialog } = require('electron')
+require('update-electron-app')({
+    repo: 'joeldevz/tpv',
+    updateInterval: '1 hour',
+    logger: require('electron-log')
+})
+
 let win;
+
 function createWindow() {
     win = new BrowserWindow({
         minWidth: 800,
@@ -13,7 +20,7 @@ function createWindow() {
         }
         , userAgent: 'Chrome',
         frame: false,
-        
+
         //transparent:true,
     })
     win.maximize()
@@ -33,4 +40,4 @@ app.on('activate', () => {
         createWindow()
     }
 })
-module.exports = {win}
+module.exports = { win }

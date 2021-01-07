@@ -1,20 +1,26 @@
 {
-  "name": "timer",
-  "version": "0.0.1",
+  "name": "tvp",
+  "version": "0.0.2-alpha",
   "description": "",
   "main": "index.js",
+  "repository": "git@github.com:joeldevz/tpv.git",
   "scripts": {
     "start": "electron .",
     "electron-start": "nodemon --watch ./ --exec electron . ",
     "test": "electron main.js",
-    "electron-build": "electron-packager ./ TIMER --win --out ./dist --arch=x64 --app-version=0.0.1 --overwrite"
+    "electron-builder": "electron-builder --x64",
+    "gh-publish":"electron-builder --x64 -p always"
   },
   "keywords": [],
   "author": "Joeldev",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "update-electron-app": "^2.0.1",
+    "electron-log": "^4.3.1"
+  },
   "devDependencies": {
     "electron": "^11.1.0",
+    "electron-builder": "^22.9.1",
     "electron-packager": "^15.2.0",
     "nodemon": "^2.0.6"
   }
